@@ -1,0 +1,16 @@
+@use "sass:map";
+
+$fonts: (
+   'Bold': (weight: 700, style: Bold) ,
+   'Medium': (weight: 500, style: Medium) ,
+   'Regular': (weight: 400, style: Regular) 
+);
+
+@each $name, $props in $fonts {
+    @font-face {
+        font-family: 'Rubik';
+        src: url('./assets/fonts/Rubik-#{$name}.ttf') format('ttf');
+        font-weight: map.get($props,weight);
+        font-style: map.get($props,style);
+    }
+}

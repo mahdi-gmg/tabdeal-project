@@ -1,0 +1,8 @@
+@use "fonts" as *;
+@use "tailwindcss" as *;
+
+body {
+    font-family: "Rubik" !important;
+    font-weight: 400;
+   display: inline-block;
+}
