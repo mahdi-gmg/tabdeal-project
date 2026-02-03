@@ -3,3 +3,8 @@
   to = "https://rickandmortyapi.com/api/character/avatar/:splat"
   status = 200
   force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
