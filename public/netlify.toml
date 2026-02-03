@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/api/character/avatar/*"
+  to = "https://rickandmortyapi.com/api/character/avatar/:splat"
+  status = 200
+  force = true
