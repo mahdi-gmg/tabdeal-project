@@ -1,7 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
+  
   app: {
+    head: {
+      title: 'Rick And Morty (Mahdi Ghanbari)',
+      htmlAttrs: {
+        lang: 'en',
+      },
+      meta: [
+        { name: 'description', content: 'Tabdeal test project' },
+      ],
+    },
     rootAttrs: {
       id: 'app'
     }
@@ -9,7 +19,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  css: ['~/assets/scss/main.scss', '~/assets/scss/root.css'],
+  css: ['~/assets/css/main.css', '~/assets/css/_fonts.scss'],
 
   vite: {
     plugins: [
@@ -18,7 +28,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/scss/_colors.scss" as *; @use "~/assets/scss/_fonts.scss" as *;'
+          additionalData: '@use "~/assets/css/_colors.scss" as *;'
         }
       }
     }

@@ -1,6 +1,6 @@
 <template>
     <header class="header relative inline-table">
-        <img class="header-logo md:mb-10 mb-4" src="/images/logo.svg" alt="App Logo" />
+        <img class="header-logo md:mb-10 mb-4" src="/icons/logo.svg" alt="App Logo" />
         <div><slot/></div>
     </header>
 </template>

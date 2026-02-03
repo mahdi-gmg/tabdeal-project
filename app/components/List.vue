@@ -3,7 +3,7 @@
     <div v-if="$slots.title || title"  class="flex gap-3 mb-6">
         <slot name="title">
             <slot v-if="$slots.icon || icon" name="icon">
-                <img class="list-icon" :src="`/images/${icon}`" width="24" height="24"/>
+                <img class="list-icon" :src="icon" width="24" height="24"/>
             </slot>
             <h3 class="list-title font-medium  text-2xl">{{ title }}</h3>
         </slot>
@@ -17,7 +17,7 @@
 <script setup lang="ts">
 interface Props {
     title?: string
-    icon?: string
+    icon?: string 
 }
 defineProps<Props>()
 
